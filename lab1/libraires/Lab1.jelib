@@ -1,0 +1,35 @@
+# header information:
+HLab1|9.07
+
+# Views:
+Vlayout|lay
+Vschematic|sch
+
+# Technologies:
+Tmocmos|mocmosAnalog()BT|mocmosNumberOfMetalLayers()I3
+
+# Cell R2C;1{lay}
+CR2C;1{lay}||mocmos|1698428197298|1698428197299|
+Ngeneric:Facet-Center|art@0||0|0||||AV
+X
+
+# Cell R2C;1{sch}
+CR2C;1{sch}||schematic|1698428214136|1698548664639|
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOff-Page|bot|D5G1;|5|-5|||R|
+NOff-Page|in|D5G1;|-23|4||||
+NOff-Page|out|D5G1;|9|4||||
+NWire_Pin|pin@0||-14|4||||
+NWire_Pin|pin@1||5|4||||
+NWire_Pin|pin@2||5|-2||||
+NResistor|resnwell@0||-11|4||||3|ATTR_length(D5G0.25;X-1.5;)S2|ATTR_width(D5G0.5;X1.5;)S2|SCHEM_resistance(D5G1;)S100
+NResistor|resnwell@1||-2|4||||3|ATTR_length(D5G0.25;X-1.5;)S2|ATTR_width(D5G0.5;X1.5;)S2|SCHEM_resistance(D5G1;)S100
+NResistor|resnwell@2||5|0|||R|3|ATTR_length(D5G0.25;X-1.5;)D2.0|ATTR_width(D5G0.5;X1.5;)D2.0|SCHEM_resistance(D5G1;)S100
+Awire|net@0|||1800|in|y|-21|4|pin@0||-14|4
+Awire|net@1|||1800|pin@0||-14|4|resnwell@0|a|-13|4
+Awire|net@2|||1800|resnwell@0|b|-9|4|resnwell@1|a|-4|4
+Awire|net@3|||1800|resnwell@1|b|0|4|pin@1||5|4
+Awire|net@4|||2700|resnwell@2|b|5|2|pin@1||5|4
+Awire|net@5|||0|out|a|7|4|pin@1||5|4
+Awire|net@6|||2700|bot|y|5|-3|pin@2||5|-2
+X
