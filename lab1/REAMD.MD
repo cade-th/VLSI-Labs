@@ -8,8 +8,6 @@ ENCE 3501
 
 ## Table of Contents
 
--------
-
 + [Introduction](#Introduction )
 + [Voltage Divider](#VoltageDivider)
     * [Schematic](#Schematic)
@@ -25,6 +23,7 @@ ENCE 3501
 ## Introduction 
 
 In this lab, a  virtual 5-bit R2R DAC Circuit is made using Electric VLSI
+
 -------
 
 ## Voltage Divider
