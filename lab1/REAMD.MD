@@ -28,9 +28,9 @@ In this lab, a  virtual 5-bit R2R DAC Circuit is made using Electric VLSI. The d
 <p align="center">
   <img src="5B_R2R_DAC/documentation/5B_R2R_DAC/schematics/lab1DACsch.png" alt="lab1Sch">
 </p>
-
-<center style="font-size:small;"> Figure 1: Schematic of R2R Ladder System </center>
-
+<p style="font-size:small; text-align:center;">
+  Figure 1: Schematic of R2R Ladder System
+</p>
 
 
 ## Voltage Divider
@@ -45,7 +45,9 @@ The provided schematic features two resistors. The resistor linked to the input 
   <img src="5B_R2R_DAC/documentation/R_Divider/schematics/R_DIVSCH.png" alt="lab1Sch">
 </p>
 
-<center style="font-size:small;"> Figure 2: Given schematic of Voltage Divider </center>
+<p style="font-size:small; text-align:center;">
+  Figure 2: Given Schematic of Voltage Divider
+</p>
 
 ### Layout 
 
