@@ -1,0 +1,16 @@
+*** SPICE deck for cell R2C{sch} from library Lab1
+*** Created on Fri Oct 27, 2023 13:36:54
+*** Last revised on Sun Oct 29, 2023 23:01:50
+*** Written on Mon Oct 30, 2023 13:05:46 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** TOP LEVEL CELL: R2C{sch}
+Rresnwell@5 resnwell@5_b in 10k
+Rresnwell@6 resnwell@6_b in 10k
+Rresnwell@7 in bot 10k
+
+* Spice Code nodes in cell cell 'R2C{sch}'
+vin vin 0 0 DC 1
+.tran 0 1
+.END

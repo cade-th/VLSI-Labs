@@ -22,7 +22,8 @@ ENCE 3501
 
 ## Introduction 
 
-In this lab, a  virtual 5-bit R2R DAC Circuit is made using Electric VLSI
+In this lab, a  virtual 5-bit R2R DAC Circuit is made using Electric VLSI. The design is verified using LTSpice, and consists of a voltage divider resistor IC combined in parallel with other copies of the ic to form the DAC. The layout was made in a similar manner. 
+
 
 -------
 
