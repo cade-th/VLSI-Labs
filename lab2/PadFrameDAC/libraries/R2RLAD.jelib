@@ -138,21 +138,51 @@ Eb4||D5G2;X1.5;|conn@1|a|U
 Evout||D5G1.5;RX-2.5;|conn@0|y|U
 X
 
+# Cell 5B_R2R_DAC_delay_sim;1{sch}
+C5B_R2R_DAC_delay_sim;1{sch}||schematic|1695931865650|1695932244471|
+I5B_R2R_DAC;1{ic}|5B_R2R_D@0||0|0|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NCapacitor|cap@0||6.5|-3.5|||||SCHEM_capacitance(D5G1;)S10p
+NOff-Page|conn@0||-12|4.5||||
+NOff-Page|conn@1||12|0.5||||
+NGround|gnd@0||-14|-5.5||||
+NGround|gnd@1||6.5|-8||||
+NWire_Pin|pin@0||-14|2.5||||
+NWire_Pin|pin@1||-14|0.5||||
+NWire_Pin|pin@2||-14|-1.5||||
+NWire_Pin|pin@3||6.5|0.5||||
+Ngeneric:Invisible-Pin|pin@4||-1|9|||||SIM_spice_card(D5G1;)S[vin vin 0 pulse(0v 2v 1u 1f 1f 3u 6u),.tran 0 2.4u 0 100p]
+Awire|net@0|||0|5B_R2R_D@0|b4|-5|4.5|conn@0|y|-10|4.5
+Awire|net@2|||0|5B_R2R_D@0|b3|-5|2.5|pin@0||-14|2.5
+Awire|net@3|||0|5B_R2R_D@0|b0|-5|-3.5|gnd@0||-14|-3.5
+Awire|net@5|||900|pin@0||-14|2.5|pin@1||-14|0.5
+Awire|net@7|||0|5B_R2R_D@0|b2|-5|0.5|pin@1||-14|0.5
+Awire|net@8|||900|pin@1||-14|0.5|pin@2||-14|-1.5
+Awire|net@9|||900|pin@2||-14|-1.5|gnd@0||-14|-3.5
+Awire|net@10|||0|5B_R2R_D@0|b1|-5|-1.5|pin@2||-14|-1.5
+Awire|net@15|||1800|5B_R2R_D@0|vout|5|0.5|pin@3||6.5|0.5
+Awire|net@16|||1800|pin@3||6.5|0.5|conn@1|a|10|0.5
+Awire|net@17|||2700|cap@0|a|6.5|-1.5|pin@3||6.5|0.5
+Awire|net@18|||900|cap@0|b|6.5|-5.5|gnd@1||6.5|-6
+Evin||D5G1.5;X1.5;|conn@0|a|U
+Evout||D5G1.5;X1.5;|conn@1|a|U
+X
+
 # Cell 5B_R2R_DAC_sim;1{lay}
-C5B_R2R_DAC_sim;1{lay}||mocmos|1695930522854|1699238511035||DRC_last_good_drc_area_date()G1695931732851|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1695931732851
+C5B_R2R_DAC_sim;1{lay}||mocmos|1695930522854|1699235216866||DRC_last_good_drc_area_date()G1695931732851|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1695931732851
 I5B_R2R_DAC;1{lay}|5B_R2R_D@0||3|136|||D5G4;
 Ngeneric:Facet-Center|art@0||0|0||||AV
-NMetal-1-Pin|pin@5||-100|-160||||
-NMetal-1-Pin|pin@6||-100|-166||||
+NMetal-1-Pin|pin@5||-90|-183||||
+NMetal-1-Pin|pin@6||-90|-166||||
 NMetal-1-Pin|pin@7||-117.5|-79.5||||
 NMetal-1-Pin|pin@8||-118|-16.5||||
 NMetal-1-Pin|pin@9||-117.5|46.5||||
 NMetal-1-Pin|pin@10||-117.5|109.5||||
 NMetal-1-Pin|pin@11||-117.5|185.5||||
 NMetal-1-Pin|pin@12||124|127.5||||
-Ngeneric:Invisible-Pin|pin@13||-217.5|18.5|||||SIM_spice_card(D5G12;)S[v4 b4 0,v3 b3 0,v2 b2 0,v1 b1 b0,vin b0 0 DC 5,.op]
-AMetal-1|net@5|||S0|5B_R2R_D@0|gnd|29|-166|pin@6||-100|-166
-AMetal-1|net@6|||S900|pin@5||-100|-160|pin@6||-100|-166
+Ngeneric:Invisible-Pin|pin@13||157.5|-1.5|||||SIM_spice_card(D5G12;)S[v4 b4 0,v3 b3 0,v2 b2 0,v1 b1 b0,vin b0 0 DC 5,.op]
+AMetal-1|net@5|||S0|5B_R2R_D@0|gnd|29|-166|pin@6||-90|-166
+AMetal-1|net@6|||S2700|pin@5||-90|-183|pin@6||-90|-166
 AMetal-1|net@7|||S1800|pin@7||-117.5|-79.5|5B_R2R_D@0|b0@793745744|20|-79.5
 AMetal-1|net@8|||S0|5B_R2R_D@0|b1@279979076|20|-16.5|pin@8||-118|-16.5
 AMetal-1|net@9|||S0|5B_R2R_D@0|b2|20|46.5|pin@9||-117.5|46.5
@@ -164,12 +194,12 @@ Eb1||D5G8;X-7;Y0.5;|pin@8||U
 Eb2||D5G8;X-7;|pin@9||U
 Eb3||D5G8;X-7;|pin@10||U
 Eb4||D5G8;X-7;|pin@11||U
-Egnd||D5G8;Y13;|pin@5||U
-Evout||D5G15;X-21.5;Y1.5;|pin@12||U
+Egnd||D5G8;Y-6;|pin@5||U
+Evout||D5G8;X11.5;Y0.5;|pin@12||U
 X
 
 # Cell 5B_R2R_DAC_sim;1{sch}
-C5B_R2R_DAC_sim;1{sch}||schematic|1695928353838|1699236541257|
+C5B_R2R_DAC_sim;1{sch}||schematic|1695928353838|1699236094529|
 I5B_R2R_DAC;1{ic}|5B_R2R_D@0||-3|4|||D5G4;
 Ngeneric:Facet-Center|art@0||0|0||||AV
 NOff-Page|conn@0||-12|0.5||||
@@ -178,7 +208,7 @@ NGround|gnd@0||-17|-0.5||||
 NWire_Pin|pin@0||-17|8.5||||
 NWire_Pin|pin@3||-17|6.5||||
 NWire_Pin|pin@4||-17|4.5||||
-Ngeneric:Invisible-Pin|pin@6||2|-3|||||SIM_spice_card(D5G1;)S[vin vin 0 DC 5,.op]
+Ngeneric:Invisible-Pin|pin@6||2|-3|||||SIM_spice_card(D5G1;)S[*vin vin 0 DC 5V,*.op]
 Awire|net@0|||2700|5B_R2R_D@0|b0|-8|0.5|5B_R2R_D@0|b1|-8|2.5
 Awire|net@1|||0|5B_R2R_D@0|b0|-8|0.5|conn@0|y|-10|0.5
 Awire|net@2|||1800|5B_R2R_D@0|vout|2|4.5|conn@1|a|3|4.5
@@ -188,36 +218,6 @@ Awire|net@9|||0|5B_R2R_D@0|b3|-8|6.5|pin@3||-17|6.5
 Awire|net@10|||900|pin@3||-17|6.5|pin@4||-17|4.5
 Awire|net@11|||900|pin@4||-17|4.5|gnd@0||-17|1.5
 Awire|net@12|||0|5B_R2R_D@0|b2|-8|4.5|pin@4||-17|4.5
-Evin||D5G1.5;X1.5;|conn@0|a|U
-Evout||D5G1.5;X1.5;|conn@1|a|U
-X
-
-# Cell R2RDelaySim;1{sch}
-CR2RDelaySim;1{sch}||schematic|1695931865650|1699236801730|
-I5B_R2R_DAC;1{ic}|5B_R2R_D@0||-1|2|||D5G4;
-Ngeneric:Facet-Center|art@0||0|0||||AV
-NCapacitor|cap@0||6.5|-3.5|||||SCHEM_capacitance(D5G1;)S10p
-NOff-Page|conn@0||-16|6.5||||
-NOff-Page|conn@1||12|2.5||||
-NGround|gnd@0||-14|-3.5||||
-NGround|gnd@1||6.5|-8||||
-NWire_Pin|pin@0||-14|4.5||||
-NWire_Pin|pin@1||-14|2.5||||
-NWire_Pin|pin@2||-14|0.5||||
-NWire_Pin|pin@3||6.5|2.5||||
-Ngeneric:Invisible-Pin|pin@4||-3|-6|||||SIM_spice_card(D5G1;)S[vin vin 0 pulse(0v 2v 1u 1f 1f 3u 6u),.tran 0 2.4u 0 100p]
-Awire|net@0|||0|5B_R2R_D@0|b4|-6|6.5|conn@0|y|-14|6.5
-Awire|net@2|||0|5B_R2R_D@0|b3|-6|4.5|pin@0||-14|4.5
-Awire|net@3|||0|5B_R2R_D@0|b0|-6|-1.5|gnd@0||-14|-1.5
-Awire|net@5|||900|pin@0||-14|4.5|pin@1||-14|2.5
-Awire|net@7|||0|5B_R2R_D@0|b2|-6|2.5|pin@1||-14|2.5
-Awire|net@8|||900|pin@1||-14|2.5|pin@2||-14|0.5
-Awire|net@9|||900|pin@2||-14|0.5|gnd@0||-14|-1.5
-Awire|net@10|||0|5B_R2R_D@0|b1|-6|0.5|pin@2||-14|0.5
-Awire|net@15|||1800|5B_R2R_D@0|vout|4|2.5|pin@3||6.5|2.5
-Awire|net@16|||1800|pin@3||6.5|2.5|conn@1|a|10|2.5
-Awire|net@17|||2700|cap@0|a|6.5|-1.5|pin@3||6.5|2.5
-Awire|net@18|||900|cap@0|b|6.5|-5.5|gnd@1||6.5|-6
 Evin||D5G1.5;X1.5;|conn@0|a|U
 Evout||D5G1.5;X1.5;|conn@1|a|U
 X
