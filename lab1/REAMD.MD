@@ -173,7 +173,7 @@ vdd vin 0 DC 5V
 </div>
 
 <p align="center"> 
-  The ;ayout was simulated in a similar manner, with an ideal output being 1.667V:
+  The layout was simulated in a similar manner, with an ideal output being 1.667V:
 </p>
 
 <p align="center">
@@ -201,7 +201,7 @@ vdd vin 0 DC 5V
 </div>
 
 <p align="center"> 
-  The resulting NCC check also passed ith no errors:
+  The resulting NCC check also passed with no errors:
 </p>
 
 <p align="center">
@@ -210,7 +210,7 @@ vdd vin 0 DC 5V
 
 <div align="center">
   <p style="font-size: small;">
-    Figure 11 (Voltage Divider Layout Simulation Results)
+    Figure 12 (Voltage Divider NCC check results)
   </p>
 </div>
 
@@ -220,8 +220,57 @@ vdd vin 0 DC 5V
 ## 5-Bit R2R DAC
 
 ### Hand Calc
+
+<p align="center"> 
+  In order to find R<sub>eq</sub> for the 5-Bit DAC, all inputs are grounded and the resistance is measured between the output and ground:
+</p>
+
+<p align="center">
+  <img src="5B_R2R_DAC/documentation/R_Divider/simulations/NCCRDIV.png" alt="lab1Sch">
+</p>
+
+<div align="center">
+  <p style="font-size: small;">
+    Figure 13 (Hand Calculations of the R<sub>eq</sub> for the DAC)
+  </p>
+</div>
+
+<p align="center"> 
+  We use the equation &tau; = C*R<sub>EQ</sub> to calculate the delay caused by the 10pF load capacitor:
+</p>
+
+
+<p align="center">
+  <img src="5B_R2R_DAC/documentation/R_Divider/simulations/NCCRDIV.png" alt="lab1Sch">
+</p>
+
+<div align="center">
+  <p style="font-size: small;">
+    Figure 14 (Hand Calculations for the delay caused by a 10pF load capacitor)
+  </p>
+</div>
+
 ### Schematic 
+
+<p align="center"> 
+  Using the voltage divider schematic and icon, the 5-bit R2R DAC was constructed:
+</p>
+
+<p align="center">
+  <img src="5B_R2R_DAC/documentation/5B_R2R_DAC/schematics/.png" alt="lab1Sch">
+</p>
+
+<div align="center">
+  <p style="font-size: small;">
+    Figure 15 (Schematic of 5-bit R2R DAC)
+  </p>
+</div>
+
+
+
 ### Layout 
+
+
 ### Simulations 
 
 
@@ -231,4 +280,8 @@ vdd vin 0 DC 5V
 
 ------
 
+TODO:
+
+1. Insert Hand Calcs
+2. DAC
 
