@@ -257,7 +257,7 @@ vdd vin 0 DC 5V
 </p>
 
 <p align="center">
-  <img src="5B_R2R_DAC/documentation/5B_R2R_DAC/schematics/.png" alt="lab1Sch">
+  <img src="5B_R2R_DAC/documentation/5B_R2R_DAC/schematics/R2RSchematic.png" alt="lab1Sch">
 </p>
 
 <div align="center">
@@ -266,12 +266,102 @@ vdd vin 0 DC 5V
   </p>
 </div>
 
+<p align="center"> 
+  And here is the resulting icon generated:
+</p>
 
+<p align="center">
+  <img src="5B_R2R_DAC/documentation/5B_R2R_DAC/schematics/R2Ricon.png" alt="lab1Sch">
+</p>
+
+<div align="center">
+  <p style="font-size: small;">
+    Figure 16 (Icon of 5-bit R2R DAC)
+  </p>
+</div>
 
 ### Layout 
 
+<p align="center">
+The R2R layout was made by inserting five of the voltage divider layouts onto a single schematic, with each connected using appropriate metal contacts
+</p>
+
+<p align="center">
+  <img src="5B_R2R_DAC/documentation/5B_R2R_DAC/layouts/R2Rlayout.png" alt="lab1Sch">
+</p>
+
+<div align="center">
+  <p style="font-size: small;">
+    Figure 17 (Layout of 5-bit R2R DAC)
+  </p>
+</div>
+
+<p align="center">
+And here is the corresponding 3D view for the layout
+</p>
+
+<p align="center">
+  <img src="5B_R2R_DAC/documentation/5B_R2R_DAC/3Dview/R2R3Dlayout.png" alt="lab1Sch">
+</p>
+
+<div align="center">
+  <p style="font-size: small;">
+    Figure 18 (3D view of Layout of the 5-bit R2R DAC)
+  </p>
+</div>
+
 
 ### Simulations 
+
+<p align="center">
+  The R2R ladder was simulated by passing 5V through inputs b0 and b1 an grounding every other input. If the voltage at the output is ~ 0.469V, then the simulation was successful. An icon for the circuit was used to simulate it in the manner below
+</p>
+
+
+<p align="center">
+  <img src="5B_R2R_DAC/documentation/5B_R2R_DAC/simulations/R2RschematicSim.png" alt="lab1Sch">
+</p>
+
+<div align="center">
+  <p style="font-size: small;">
+    Figure 19 (Simulation of the 5-bit R2R DAC Schematic)
+  </p>
+</div>
+
+<p align="center">
+  And this is the SPICE code used:
+</p>
+
+```
+vin vin 0 DC 5
+.op
+```
+
+<div align="center">
+  <p style="font-size: small;">
+    Figure 20 (SPICE code for simulating the schematic fo the  5-bit R2R DAC)
+  </p>
+</div>
+
+<p align="center">
+  As seen below, the simulation was successful, with an output voltage of 0.46875V:
+</p>
+
+<p align="center">
+  <img src="5B_R2R_DAC/documentation/5B_R2R_DAC/simulations/R2RschematicSimRESULTS.png" alt="lab1Sch">
+</p>
+
+<div align="center">
+  <p style="font-size: small;">
+    Figure 21 (Simulation Results of the 5-bit R2R DAC Schematic)
+  </p>
+</div>
+
+
+
+
+
+
 
 
 -------
