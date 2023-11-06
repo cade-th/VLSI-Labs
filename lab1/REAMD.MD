@@ -226,7 +226,7 @@ vdd vin 0 DC 5V
 </p>
 
 <p align="center">
-  <img src="5B_R2R_DAC/documentation/R_Divider/simulations/NCCRDIV.png" alt="lab1Sch">
+  <img src="5B_R2R_DAC/documentation/5B_R2R_DAC/schematics/handcalc.png" alt="lab1Sch">
 </p>
 
 <div align="center">
@@ -240,9 +240,15 @@ vdd vin 0 DC 5V
 </p>
 
 
-<p align="center">
-  <img src="5B_R2R_DAC/documentation/R_Divider/simulations/NCCRDIV.png" alt="lab1Sch">
-</p>
+R<sub>EQ</sub> = 10k&Omega;
+
+C<sub>EQ</sub>= 10pF
+
+&tau; = 0.7 (10k&Omega;)(10pF)
+
+
+= 70ns
+
 
 <div align="center">
   <p style="font-size: small;">
@@ -471,7 +477,4 @@ vin b0 0 DC 5
 
 ------
 
-TODO:
-
-1. Insert Hand Calcs
 
