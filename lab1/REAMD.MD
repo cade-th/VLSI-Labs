@@ -70,6 +70,7 @@ An electric VLSI schematic was created from the above schematic, with two 10k oh
 
 <p align="center"> 
 The schematic generated an icon which was modified to be compact enough to be placed for the DAC
+</p>
 
 <p align="center">
   <img src="5B_R2R_DAC/documentation/R_Divider/schematics/RIDVicon.png" alt="lab1Sch">
@@ -84,6 +85,44 @@ The schematic generated an icon which was modified to be compact enough to be pl
 </p>
 
 ### Layout 
+
+<p align="center"> 
+For the voltage Divider, the layout was made from three n-well resistors with a width of 15 &lambda; and a length of 175.44 &lambda; and the given value of R<sub>sq</sub> = 855 &Omega;/square. Using a width value, the appropriate length was calculated as follows:
+</p>
+
+```
+10000 = (855)*(L/15)
+L = (10000*15)/855
+L = 175.44 
+```
+<p align="center">
+Each node was connected to an appropriate input and output using metal contacts
+</p>
+
+<p align="center">
+  <img src="5B_R2R_DAC/documentation/R_Divider/layouts/RDIVlayout.png" alt="lab1Sch">
+</p>
+
+<div align="center">
+  <p style="font-size: small;">
+    Figure 5 (ElectricVLSI Layout of Voltage Divider)
+  </p>
+</div>
+
+<p align="center">
+And here is the 3D view of the layout
+</p>
+
+<p align="center">
+  <img src="5B_R2R_DAC/documentation/R_Divider/3Dview/RDIVlayout3D.png" alt="lab1Sch">
+</p>
+
+<div align="center">
+  <p style="font-size: small;">
+    Figure 6 (ElectricVLSI 3D view of Layout of Voltage Divider)
+  </p>
+</div>
+
 
 ### Simulations 
 

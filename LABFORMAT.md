@@ -29,6 +29,25 @@ ENCE 3501
 ## Subject 1
 
 ### Schematic
+<p align="center"> 
+text
+</p>
+
+<p align="center">
+  <img src="/path/to/image" alt="img">
+</p>
+
+<div align="center">
+  <p style="font-size: small;">
+    Figure x (image caption)
+  </p>
+</div>
+
+```
+calculations
+```
+
+
 
 ### Layout 
 
