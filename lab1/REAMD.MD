@@ -357,21 +357,121 @@ vin vin 0 DC 5
   </p>
 </div>
 
+<p align="center">
+  The schematic was then simulated with a pulse source instead of pure DC. B4 is connected to the pulse, with every other input connected to ground. To achieve an ideal delay of 70ns, a 10pF load capacitor was added.
+</p>
 
+<p align="center">
+  <img src="5B_R2R_DAC/documentation/5B_R2R_DAC/simulations/PulseSim.png" alt="lab1Sch">
+</p>
 
+<div align="center">
+  <p style="font-size: small;">
+    Figure 22 (Pulse Simulation of the 5-bit R2R DAC Schematic)
+  </p>
+</div>
 
+<p align="center">
+  This is the SPICE code for the simulation:
+</p>
 
+```
+vin vin 0 pulse(0v 2v 1u 1f 3u 6u)
+.tran 0 2 4u 0 100p
+```
+<div align="center">
+  <p style="font-size: small;">
+    Figure 23 (Pulse Simulation  SPICE code of the 5-bit R2R DAC Schematic)
+  </p>
+</div>
 
+<p align="center">
+  Below is the waveform for the simulation. The measured delay of the DAC was 70.989ns, indicating the simulation was correct.
+</p>
 
+<p align="center">
+  <img src="5B_R2R_DAC/documentation/5B_R2R_DAC/simulations/pulseSimWave.png" alt="lab1Sch">
+</p>
+
+<div align="center">
+  <p style="font-size: small;">
+    Figure 24 (Pulse Simulation Waveform of the 5-bit R2R DAC Schematic)
+  </p>
+</div>
+
+<p align="center">
+  The layout of the DAC was simulated in a similar manner as before, with 5V passed through inputs b0 and b1, with every other input grounded. The voltage output will need to be ~ 0.469V to demonstrate a successful simulation
+</p>
+
+<p align="center">
+  <img src="5B_R2R_DAC/documentation/5B_R2R_DAC/simulations/R2RlayoutSim.png" alt="lab1Sch">
+</p>
+
+<div align="center">
+  <p style="font-size: small;">
+    Figure 25 (Layout simulation of the 5-bit R2R DAC)
+  </p>
+</div>
+
+<p align="center">
+  This is the corresponding SPICE code:
+</p>
+
+```
+v4 b4 0
+v3 b3 0
+v2 b2 0
+v1 b1 b0
+vin b0 0 DC 5
+.op
+```
+<div align="center">
+  <p style="font-size: small;">
+    Figure 26 (SPICE code for the layout simulation of the 5-bit R2R DAC)
+  </p>
+</div>
+
+<p align="center">
+  These results show the simulation was successful with an output voltage of ~0.469V
+</p>
+
+<p align="center">
+  <img src="5B_R2R_DAC/documentation/5B_R2R_DAC/simulations/R2RlayoutSimRESULTS.png" alt="lab1Sch">
+</p>
+
+<div align="center">
+  <p style="font-size: small;">
+    Figure 27 (Layout simulation Results of the 5-bit R2R DAC)
+  </p>
+</div>
+
+<p align="center">
+  Finally, here is the NCC rule check to make sure the layout and schematic have the same setup with no erros.
+</p>
+
+<p align="center">
+  <img src="5B_R2R_DAC/documentation/5B_R2R_DAC/simulations/NCCR2R.png" alt="lab1Sch">
+</p>
+
+<div align="center">
+  <p style="font-size: small;">
+    Figure 28 (NCC Check Results of the 5-bit R2R DAC)
+  </p>
+</div>
 
 -------
 
 ## Conclusion
+
+<p align="center">
+  Developing the voltage divider element separately for each DAC input significantly enhanced the design's performance. The prior creation and validation of the voltage divider added a level of confidence when integrating it into the 5-bit DAC's design. Each development phase of the 5-bit R2R DAC constructed in this laboratory was rigorously tested and successfully met all simulation criteria. The 5-bit DAC component library, assembled in Electric VLSI, is ready for incorporation into upcoming initiatives. Additionally, it will serve as an instructional example for interfacing circuit pads in the second lab session.
+
+</p>
+
 
 ------
 
 TODO:
 
 1. Insert Hand Calcs
-2. DAC
 
