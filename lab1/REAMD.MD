@@ -124,9 +124,98 @@ And here is the 3D view of the layout
 </div>
 
 
+
+
 ### Simulations 
 
 ------
+
+<p align="center">
+  The RDIV schematic was simulated by creating a separate cell group in which the RDIV icon was imported. 5V was passed through the circuit as input, and the expected simulation output was 1.667V.
+</p>
+
+<p align="center">
+  <img src="5B_R2R_DAC/documentation/R_Divider/simulations/RDIVSchematicSim.png" alt="lab1Sch">
+</p>
+
+<div align="center">
+  <p style="font-size: small;">
+    Figure 7 (Voltage Divider Simulation)
+  </p>
+</div>
+
+<p align="center">
+  This is the SPICE Code used for the schematic simulation:
+</p>
+
+```
+vdd vin 0 DC 5V
+.op
+```
+<div align="center">
+  <p style="font-size: small;">
+    Figure 8 (Voltage Divider Simulation Spice Code)
+  </p>
+</div>
+
+<p align="center"> 
+  The results of the simulation are shown below, with an output voltage of 1.667V, indidcating that the schematic is correct.
+</p>
+
+<p align="center">
+  <img src="5B_R2R_DAC/documentation/R_Divider/simulations/RDIVschesimRESULT.png" alt="lab1Sch">
+</p>
+
+<div align="center">
+  <p style="font-size: small;">
+    Figure 9 (Voltage Divider Schematic Simulation Result)
+  </p>
+</div>
+
+<p align="center"> 
+  The ;ayout was simulated in a similar manner, with an ideal output being 1.667V:
+</p>
+
+<p align="center">
+  <img src="5B_R2R_DAC/documentation/R_Divider/simulations/layoutSim.png" alt="lab1Sch">
+</p>
+
+<div align="center">
+  <p style="font-size: small;">
+    Figure 10 (Voltage Divider Layout Simulation)
+  </p>
+</div>
+
+<p align="center"> 
+  These are the results for the layout simulation, showing that a correct output of 1.667V was achieved:
+</p>
+
+<p align="center">
+  <img src="5B_R2R_DAC/documentation/R_Divider/simulations/layoutSIMRESULTS.png" alt="lab1Sch">
+</p>
+
+<div align="center">
+  <p style="font-size: small;">
+    Figure 11 (Voltage Divider Layout Simulation Results)
+  </p>
+</div>
+
+<p align="center"> 
+  The resulting NCC check also passed ith no errors:
+</p>
+
+<p align="center">
+  <img src="5B_R2R_DAC/documentation/R_Divider/simulations/NCCRDIV.png" alt="lab1Sch">
+</p>
+
+<div align="center">
+  <p style="font-size: small;">
+    Figure 11 (Voltage Divider Layout Simulation Results)
+  </p>
+</div>
+
+
+
 
 ## 5-Bit R2R DAC
 
