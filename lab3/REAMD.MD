@@ -176,9 +176,50 @@ And here is the 3D view of the padframe layout
 
 ### Schematic 
 
+<p align="center">
+The final IC schematic was constructed using the padframe and NMOS transitor icon provided. The transistor is connected to the padframe using its pins 2 through 6, whlie the voltage bus of the padframe is connected to pin 5 and pin 6 is connected to ground
+</p>
 
+<p align="center">
+  <img src="ICESD/documentation/finalICESD/schematics/finalICsch.png" alt="img">
+</p>
+
+<div align="center">
+  <p style="font-size: small;">
+    Figure 9 (ESD Final IC schematic)
+  </p>
+</div>
 
 ### Layout 
+
+<p align="center">
+The final IC layout is the culmination of the ESD padframe and the NMOS transistor layout, with the inputs and outputs connected to the appropriate pins from the schematic using metal one and two vias.
+
+</p>
+
+<p align="center">
+  <img src="ICESD/documentation/finalICESD/layouts/finalIClayout.png" alt="img">
+</p>
+
+<div align="center">
+  <p style="font-size: small;">
+    Figure 10 (ESD Final IC layout)
+  </p>
+</div>
+
+<p align="center">
+Finally, here is a 3D view showcasing the entire padframe with ESD protection
+</p>
+
+<p align="center">
+  <img src="ICESD/documentation/finalICESD/3Dview/3d.png" alt="img">
+</p>
+
+<div align="center">
+  <p style="font-size: small;">
+    Figure 12(ESD Final IC layout in 3D)
+  </p>
+</div>
 
 
 -------
@@ -186,5 +227,10 @@ And here is the 3D view of the padframe layout
 ## Conclusion
 
 ------
+
+<p align="center">
+Incorporating this basic ESD protection circuit into each pad cell offers a measure of protection for the IC's internal components from electrostatic discharge. This foundational design can be expanded upon in future projects to develop more intricate circuits, allowing the creation of padframes from this collection that include advanced ESD safeguards
+</p>
+
 
 
