@@ -29,7 +29,7 @@ The goal of this lab is to create a padframe that contains the 5-bit DAC made pr
 </p>
 
 <p align="center">
-  <img src="PadFrameDAC/documentation/padframe_dac/schematics/padFrameTotal.png" alt="img">
+  <img src="PadFrameDAC/documentation/PF&DAC/schematics/padFrameTotal.png" alt="img">
 </p>
 
 <div align="center">
