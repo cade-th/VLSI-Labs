@@ -222,11 +222,8 @@ Finally, here is a 3D view showcasing the entire padframe with ESD protection
 </div>
 
 
--------
-
 ## Conclusion
 
-------
 
 <p align="center">
 Incorporating this basic ESD protection circuit into each pad cell offers a measure of protection for the IC's internal components from electrostatic discharge. This foundational design can be expanded upon in future projects to develop more intricate circuits, allowing the creation of padframes from this collection that include advanced ESD safeguards
