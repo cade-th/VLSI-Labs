@@ -1,8 +1,8 @@
-# Lab #: Title
+# Lab 4: Inverter
 
 Cade Thornton
 
-10/XX/2023
+10/28/2023
 
 ENCE 3501
 
@@ -11,11 +11,11 @@ ENCE 3501
 -------
 
 + [Introduction](#Introduction )
-+ [Subject 1](#Link)
++ [Inverter 1](#Inverter1)
     * [Schematic](#Schematic)
     * [Layout](#Layout)
     * [Simulations](#Simulations)
-+ [Subject 1](#Link)
++ [Inverter 2](#Inverter2)
     * [Hand Calc](#HandCal)
     * [Schematic](#Schematic)
     * [Layout](#Layout)
@@ -26,7 +26,21 @@ ENCE 3501
 
 -------
 
-## Subject 1
+<p align="center">
+The purpose of this lab is to utilize NMOS, PMOS, NWELL and PWELL standard library components to construct a CMOS inverter of various sizes.
+<p>
+
+<p align="center">
+  <img src="Inverter/documentation/CMOSinverter.png" alt="img">
+</p>
+
+<div align="center">
+  <p style="font-size: small;">
+    Figure 1 (CMOS Inverter Schematic)
+  </p>
+</div>
+
+## Inverter 1
 
 ### Schematic
 
@@ -36,7 +50,7 @@ ENCE 3501
 
 ------
 
-## Subject 2
+## Inverter 2
 
 ### Hand Calc
 ### Schematic 

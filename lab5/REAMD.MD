@@ -1,8 +1,8 @@
-# Lab #: Title
+# Lab #5: Full Adder
 
 Cade Thornton
 
-10/XX/2023
+11/3/2023
 
 ENCE 3501
 
@@ -11,12 +11,19 @@ ENCE 3501
 -------
 
 + [Introduction](#Introduction )
-+ [Subject 1](#Link)
++ [NAND](#NAND)
     * [Schematic](#Schematic)
     * [Layout](#Layout)
     * [Simulations](#Simulations)
-+ [Subject 1](#Link)
-    * [Hand Calc](#HandCal)
++ [NOT](#NOT)
+    * [Schematic](#Schematic)
+    * [Layout](#Layout)
+    * [Simulations](#Simulations)
++ [XOR](#XOR)
+    * [Schematic](#Schematic)
+    * [Layout](#Layout)
+    * [Simulations](#Simulations)
++ [Full Adder](#FullAdder)
     * [Schematic](#Schematic)
     * [Layout](#Layout)
     * [Simulations](#Simulations)
@@ -26,23 +33,50 @@ ENCE 3501
 
 -------
 
-## Subject 1
+<p align="center">
+The purpose of this lab is to utilize NMOS, PMOS, NWELL and PWELL standard library components to construct a CMOS inverter of various sizes.
+<p>
+
+<p align="center">
+  <img src="documentation/Full Adder/FullAdderLogism.png" alt="img">
+</p>
+
+<div align="center">
+  <p style="font-size: small;">
+    Figure 1 (Provided Schematic of the Full Adder)
+  </p>
+</div>
+
+
+## NAND
 
 ### Schematic
-
 ### Layout 
-
 ### Simulations 
 
 ------
 
-## Subject 2
+## NOT
 
-### Hand Calc
 ### Schematic 
 ### Layout 
 ### Simulations 
 
+-------
+
+## XOR
+
+### Schematic
+### Layout 
+### Simulations 
+
+------
+
+## Full-Adder
+
+### Schematic 
+### Layout 
+### Simulations 
 
 -------
 
