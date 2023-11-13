@@ -100,7 +100,7 @@ Eout||D5G2;X-1.5;|pin@2||U
 X
 
 # Cell inverter_2;1{lay}
-Cinverter_2;1{lay}||mocmos|1697217069390|1697427167081||DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1697427173929
+Cinverter_2;1{lay}||mocmos|1697217069390|1699495812924||DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1697427173929
 Ngeneric:Facet-Center|art@0||0|0||||AV
 NMetal-1-N-Active-Con|contact@1||-6|-9.5|1|1||
 NMetal-1-P-Active-Con|contact@3||-6|11.5|1|7||
@@ -168,23 +168,23 @@ AMetal-1|net@76||2|S2700|pin@10||11|-0.5|contact@8||11|11.5
 AMetal-1|net@77||2|S2700|contact@14||55|-9.5|pin@11||55|-0.5
 AMetal-1|net@78||2|S2700|pin@11||55|-0.5|contact@16||55|11.5
 AMetal-1|net@79||2|S1800|pin@10||11|-0.5|pin@11||55|-0.5
-Egnd||D5G5;|substr@0||U
-Ein||D5G5;|pin@9||U
-Eout||D5G5;|pin@11||U
-Evdd||D5G5;|well@0||U
+Egnd||D5G5;Y2;|substr@0||U
+Ein||D5G5;X4;|pin@9||U
+Eout||D5G5;X-4;|pin@11||U
+Evdd||D5G5;X-1;Y-2;|well@0||U
 X
 
 # Cell inverter_2;1{sch}
-Cinverter_2;1{sch}||schematic|1697217041790|1697489485197|
+Cinverter_2;1{sch}||schematic|1697217041790|1699495363608|
 Ngeneric:Facet-Center|art@0||0|0||||AV
 NOff-Page|conn@0||9|0||||
 NOff-Page|conn@1||-7.5|0||||
 NGround|gnd@0||1.5|-10.5||||
-Iinverter_2;1{ic}|inverter@1||22|0|||D5G4;
-NTransistor|nmos@0||-0.5|-4.5|||R||ATTR_length(D5G0.5;X-0.5;Y-1;)S6|ATTR_width(D5G1;X0.5;Y-1;)S24|SIM_spice_model(D5G1;Y-3.5;)SNMOS
+Iinverter_2;1{ic}|inverter@1||12|-9|||D5G4;
+NTransistor|nmos@0||-0.5|-4.5|||R||ATTR_length(D5G0.5;X-0.5;Y-1;)S6|ATTR_width(D5G1;X0.5;Y-1;)S24|SIM_spice_model(D5G1;Y-7.5;)SNMOS
 NWire_Pin|pin@0||1.5|0||||
 NWire_Pin|pin@1||-1.5|0||||
-NTransistor|pmos@0||-0.5|5|||YR|2|ATTR_length(D5G0.5;X-0.5;Y-1;)S6|ATTR_width(D5G1;X0.5;Y-1;)S48|SIM_spice_model(D5G1;Y-3.5;)SPMOS
+NTransistor|pmos@0||-0.5|5|||YR|2|ATTR_length(D5G0.5;X-0.5;Y-1;)S6|ATTR_width(D5G1;X0.5;Y-1;)S48|SIM_spice_model(D5G1;Y-7.5;)SPMOS
 NPower|pwr@0||1.5|10||||
 Awire|net@0|||0|conn@0|a|7|0|pin@0||1.5|0
 Awire|net@1|||2700|pmos@0|s|1.5|7|pwr@0||1.5|10
@@ -194,8 +194,8 @@ Awire|net@4|||900|nmos@0|s|1.5|-6.5|gnd@0||1.5|-8.5
 Awire|net@5|||2700|nmos@0|d|1.5|-2.5|pin@0||1.5|0
 Awire|net@6|||2700|nmos@0|g|-1.5|-4.5|pin@1||-1.5|0
 Awire|net@7|||0|pin@1||-1.5|0|conn@1|y|-5.5|0
-Ein||D5G2;X-3;|conn@1|y|U
-Eout||D5G2;X1.5;|conn@0|a|U
+Ein||D5G2;X-2;|conn@1|y|U
+Eout||D5G2;X2.5;|conn@0|a|U
 X
 
 # Cell inverter_sim;1{sch}
@@ -222,31 +222,31 @@ Evout2||D5G2;X2.5;|conn@2|y|U
 X
 
 # Cell inverter_sim_loaded;1{sch}
-Cinverter_sim_loaded;1{sch}||schematic|1697676948409|1697692855867|
+Cinverter_sim_loaded;1{sch}||schematic|1697676948409|1699494234984|
 Ngeneric:Facet-Center|art@0||0|0||||AV
-NCapacitor|cap@0||5.5|-1|||||SCHEM_capacitance(D5G1;)S{x}
-NCapacitor|cap@1||5.5|-13|||||SCHEM_capacitance(D5G1;)S{x}
-NOff-Page|conn@0||-10|2.5||||
-NOff-Page|conn@1||8.5|2.5||||
-NOff-Page|conn@2||8.5|-9.5||||
-NGround|gnd@0||5.5|-5.5||||
-NGround|gnd@1||5.5|-17.5||||
-Iinverter_1;1{ic}|inverter@0||-0.5|2.5|||D5G4;
-Iinverter_2;1{ic}|inverter@1||-0.5|-9.5|||D5G4;
-NWire_Pin|pin@0||-6.5|-9.5||||
-NWire_Pin|pin@1||-6.5|2.5||||
-Ngeneric:Invisible-Pin|pin@2||-0.5|9|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 5,vin vin 0 pulse(0v 5v 5n 1n 1n 12n 25n),.step param x list 100f 1p 10p 100p,.trans 0 25n 0 100p]
-Ngeneric:Invisible-Pin|pin@3||0|12.5|||||SIM_spice_card(D5G1;)S.include C5_models.txt
-Awire|net@0|||0|inverter@1|in|-5.5|-9.5|pin@0||-6.5|-9.5
-Awire|net@1|||1800|conn@0|y|-8|2.5|pin@1||-6.5|2.5
-Awire|net@2|||1800|pin@1||-6.5|2.5|inverter@0|in|-5.5|2.5
-Awire|net@3|||2700|pin@0||-6.5|-9.5|pin@1||-6.5|2.5
-Awire|net@4|||1800|inverter@1|out|5.5|-9.5|conn@2|a|6.5|-9.5
-Awire|net@5|||1800|inverter@0|out|5.5|2.5|conn@1|a|6.5|2.5
-Awire|net@6|||900|inverter@0|out|5.5|2.5|cap@0|a|5.5|1
-Awire|net@7|||900|cap@0|b|5.5|-3|gnd@0||5.5|-3.5
-Awire|net@8|||900|cap@1|b|5.5|-15|gnd@1||5.5|-15.5
-Awire|net@9|||900|inverter@1|out|5.5|-9.5|cap@1|a|5.5|-11
+NCapacitor|cap@0||4.5|5|||||SCHEM_capacitance(D5G1;)S{x}
+NCapacitor|cap@1||4.5|-7|||||SCHEM_capacitance(D5G1;)S{x}
+NOff-Page|conn@0||-11|8.5||||
+NOff-Page|conn@1||7.5|8.5||||
+NOff-Page|conn@2||7.5|-3.5||||
+NGround|gnd@0||4.5|0.5||||
+NGround|gnd@1||4.5|-11.5||||
+Iinverter_1;1{ic}|inverter@0||-1.5|8.5|||D5G4;
+Iinverter_2;1{ic}|inverter@1||-1.5|-3.5|||D5G4;
+NWire_Pin|pin@0||-7.5|-3.5||||
+NWire_Pin|pin@1||-7.5|8.5||||
+Ngeneric:Invisible-Pin|pin@2||8.5|-18|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 5,vin vin 0 pulse(0v 5v 5n 1n 1n 12n 25n),.step param x list 100f 1p 10p 100p,.trans 0 25n 0 100p]
+Ngeneric:Invisible-Pin|pin@3||-9|-17.5|||||SIM_spice_card(D5G1;)S.include C5_models.txt
+Awire|net@0|||0|inverter@1|in|-6.5|-3.5|pin@0||-7.5|-3.5
+Awire|net@1|||1800|conn@0|y|-9|8.5|pin@1||-7.5|8.5
+Awire|net@2|||1800|pin@1||-7.5|8.5|inverter@0|in|-6.5|8.5
+Awire|net@3|||2700|pin@0||-7.5|-3.5|pin@1||-7.5|8.5
+Awire|net@4|||1800|inverter@1|out|4.5|-3.5|conn@2|a|5.5|-3.5
+Awire|net@5|||1800|inverter@0|out|4.5|8.5|conn@1|a|5.5|8.5
+Awire|net@6|||900|inverter@0|out|4.5|8.5|cap@0|a|4.5|7
+Awire|net@7|||900|cap@0|b|4.5|3|gnd@0||4.5|2.5
+Awire|net@8|||900|cap@1|b|4.5|-9|gnd@1||4.5|-9.5
+Awire|net@9|||900|inverter@1|out|4.5|-3.5|cap@1|a|4.5|-5
 Evin||D5G2;X-1.5;|conn@0|a|U
 Evout1||D5G2;X3;|conn@1|y|U
 Evout2||D5G2;X3;|conn@2|y|U

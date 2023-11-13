@@ -2,7 +2,7 @@
 
 Cade Thornton
 
-10/28/2023
+11/3/2023
 
 ENCE 3501
 
@@ -263,6 +263,5 @@ Lab 4 delved into developing a logic gate through CMOS technology, crafting an i
 </p>
 
 
-------
 
 
